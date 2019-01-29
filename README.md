@@ -1,8 +1,8 @@
-##verFides project on Web Starter Kit
+# verFides project on Web Starter Kit
 
 
 
-# Browser Support
+## Browser Support
 
 * Chrome
 * Edge
@@ -11,7 +11,7 @@
 * Internet Explorer
 
 
-# Commands
+## Commands
 
 ```sh
 $ gulp
@@ -29,7 +29,7 @@ $ gulp dev
 Same as 'gulp' command but without starting the local server.
 
 
-## Serve the Fully Built & Optimized Site
+### Serve the Fully Built & Optimized Site
 
 ```sh
 $ gulp production
@@ -38,7 +38,7 @@ $ gulp production
 `gulp production` task creates the `production/` folder in the root of the project with **assets files only**. It will **help you** to **create clear** instances of code for the **production** or **further implementation**.
 
 
-## Structure
+### Structure
 
 ```
 ├── assets          #Folder with files after compiling
@@ -57,7 +57,7 @@ $ gulp production
 In `package.json` you can find all the dependencies.
 In `src` folder you can find all sources for the project (images, sass , javascript files).
 
-## `src` folder structure
+### `src` folder structure
 
 ```
 ├── images                      #Folder for storing images
@@ -99,7 +99,7 @@ Use `images` folder to add your graphic files, `modules` to add your javascript 
 Use `vendor_entries` to include plugins into your project.
 
 
-## Tasks
+### Tasks
 
 |Task                               | Description                                                                                                                                                                                                                                               |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

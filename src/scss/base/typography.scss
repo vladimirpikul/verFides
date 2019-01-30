@@ -17,10 +17,13 @@ h6, .h6,
 
 h1, .h1 {
   font-size: map-deep-get($headings, 'sizes', 'h1-font-size');
+  font-weight: 300;
+  font-style: italic;
 }
 
 h2, .h2 {
   font-size: map-deep-get($headings, 'sizes', 'h2-font-size');
+  font-weight: 400;
 }
 
 h3, .h3 {
@@ -40,11 +43,12 @@ h6, .h6 {
 }
 
 p {
-  margin: 0 0 1em;
+  margin: 0 0 1.2em;
 }
 
 a {
   color: map-get($base, 'base-link-color');
+  &,
   &:hover,
   &:focus {
     text-decoration: none;

@@ -5,8 +5,8 @@
 // For headers
 $headings: (
   'sizes': (
-    'h1-font-size': 30px,
-    'h2-font-size': 27px,
+    'h1-font-size': 36px,
+    'h2-font-size': 18px,
     'h3-font-size': 24px,
     'h4-font-size': 21px,
     'h5-font-size': 17px,
@@ -22,12 +22,12 @@ $headings: (
 $base: (
   'base-font-sans-serif': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
   'base-font-serif': unquote("'Times New Roman', Times, Baskerville, Georgia, serif"),
-  'base-text-color': #000,
+  'base-text-color': #787878,
   'base-background-color': #fff,
-  'base-link-color':#39f,
-  'base-font-size': 16px,
-  'base-line-height': 1.2,
-  'base-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'base-link-color':#1a3255,
+  'base-font-size': 14px,
+  'base-line-height': 1.5,
+  'base-font-family': unquote("'Open Sans', sans-serif"),
   'base-min-width': 320px
 );
 

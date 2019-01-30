@@ -1,0 +1,37 @@
+// container
+.container{
+  width: 100%;
+  max-width: 1000px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+// section
+.default-section{
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+}
+
+// flex
+.flex-container{
+  display: flex;
+}
+.space-between{
+  justify-content: space-between;
+}
+.center{
+  justify-content: center;
+}
+.align-center{
+  align-items: center;
+}
+.column{
+  flex-direction: column;
+}
+
+// position
+.relative{
+  position: relative;
+}

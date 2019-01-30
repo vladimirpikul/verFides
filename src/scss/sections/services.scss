@@ -1,0 +1,25 @@
+.services{
+  .section-title:after{
+    position: absolute;
+    content: '';
+    width: 250px;
+    background-color: #769eca;
+    height: 1px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .services-swiper{
+    margin-top: 100px;
+  }
+  .swiper-slide{
+    text-align: center;
+
+    .slide-text{
+      display: block;
+      font-size: 18px;
+      color: #787878;
+      margin-top: 15px;
+    }
+  }
+}

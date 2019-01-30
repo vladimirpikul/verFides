@@ -1,14 +1,18 @@
 const videoControls = () => {
-  const videoEl = document.getElementsByClassName('header-video')[0];
-  $('.header-video-control').click((e) => {
+  const videoEl = $('.header-video')[0];
+  const controlImg = $('.header-video-control .control-img');
+  const controlText = $('.header-video-control .control-text');
+  const controlBtn = $('.header-video-control');
+
+  controlBtn.click((e) => {
     e.preventDefault();
-    $('.header-video-control .control-img').toggleClass('show');
+    controlImg.toggleClass('show');
     if (videoEl.paused) {
       videoEl.play();
-      $('.header-video-control .control-text').text('Pause');
+      controlText.text('Pause');
     } else {
       videoEl.pause();
-      $('.header-video-control .control-text').text('Play');
+      controlText.text('Play');
     }
   });
 };

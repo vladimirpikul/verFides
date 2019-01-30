@@ -1,19 +1,21 @@
-.header-nav-list{
-  @extend %listreset;
+.header-nav{
+  &-list{
+    @extend %listreset;
 
-  li{
-    & + li{
-      margin-left: 43px;
-    }
+    li{
+      & + li{
+        margin-left: 43px;
+      }
 
-    &:hover{
-      .header-nav-item{
-        border-bottom-color: #fff;
+      &:hover{
+        .header-nav-item{
+          border-bottom-color: #fff;
+        }
       }
     }
   }
 
-  .header-nav-item{
+  &-item{
     display: block;
     height: 46px;
     line-height: 46px;

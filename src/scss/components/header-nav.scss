@@ -1,0 +1,26 @@
+.header-nav{
+  &-list{
+    @extend %listreset;
+
+    li{
+      & + li{
+        margin-left: 43px;
+      }
+
+      &:hover{
+        .header-nav-item{
+          border-bottom-color: #fff;
+        }
+      }
+    }
+  }
+
+  &-item{
+    display: block;
+    height: 46px;
+    line-height: 46px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid transparent;
+  }
+}

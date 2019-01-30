@@ -1,0 +1,28 @@
+.welcome{
+  border-bottom: 1px solid #a5a5a5;
+
+  .section-title:after{
+    position: absolute;
+    content: '';
+    width: 250px;
+    background-color: #769eca;
+    height: 1px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .section-title-text{
+    margin: 75px auto 30px;
+    max-width: 660px;
+  }
+  .section-article{
+    text-align: left;
+    column-count: 2;
+    column-width: 475px;
+    column-gap: 20px;
+
+    p{
+      display: grid;
+    }
+  }
+}

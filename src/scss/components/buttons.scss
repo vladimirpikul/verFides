@@ -7,7 +7,8 @@
   background: transparent;
   
   &:hover{
-    background-color: #f0f8ff;
+    background-color: #1a3255;
+    color: #fff;
   }
 
   &.white{
@@ -15,7 +16,8 @@
     border-color: #fff;
 
     &:hover{
-      background-color: #294c80;
+      background-color: #fff;
+      color: #1a3255;
     }
   }
 }

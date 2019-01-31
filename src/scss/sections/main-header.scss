@@ -36,13 +36,20 @@
   .scroll-btn{
     @include size(50px);
 
-    padding: 0;
-    //text-align: center;
-    //line-height: 50px;
+    display: block;
+    border: 1px solid #fff;
+    text-align: center;
+    transition: all 0.2s linear;
 
-    //img{
-    //  vertical-align: middle;
-    //}
+    i{
+      color: #fff;
+      font-size: 28px;
+      line-height: 50px;
+    }
+
+    &:hover{
+      padding-top: 5px;
+    }
   }
 
   .scroll-icon-wrap{
@@ -63,7 +70,8 @@
       margin-right: 5px;
     }
 
-    .control-img{
+    .control-icon{
+      font-size: 24px;
       display: none;
       vertical-align: middle;
 

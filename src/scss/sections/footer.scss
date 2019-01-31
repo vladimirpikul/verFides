@@ -1,0 +1,116 @@
+.footer-main{
+  text-align: center;
+  
+  .currency-select{
+    color: #929292;
+    font-weight: bold;
+
+    .item{
+      margin-left: 15px;
+      color: inherit;
+    }
+
+    .active{
+      color: #769eca;
+    }
+  }
+
+  .currency-row{
+    margin-top: 5px;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .footer-nav{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &-list {
+      @extend %listreset;
+
+      max-width: 600px;
+      flex-wrap: wrap;
+      margin: 45px auto 0;
+    }
+
+    &-item{
+      font-size: 16px;
+      color: inherit;
+    }
+
+    li{
+      color: #787878;
+
+      & + li{
+        margin-left: 25px;
+        margin-bottom: 5px;
+      }
+      
+      &:hover{
+        color: #000;
+      }
+    }
+
+    .icon-linkedin{
+      color: #769eca;
+      margin-right: 3px;
+    }
+  }
+
+  .services-nav{
+    &-list {
+      @extend %listreset;
+
+      max-width: 980px;
+      flex-wrap: wrap;
+      margin: 35px auto 35px;
+    }
+
+    li{
+      color: #002e5f;
+
+      & + li{
+        margin-left: 20px;
+        margin-bottom: 5px;
+      }
+
+      &:hover{
+        color: #769fc6;
+      }
+    }
+
+    &-item{
+      color: inherit;
+      font-weight: 400;
+    }
+  }
+
+  .copyright{
+    padding-top: 15px;
+
+    &:before{
+      position: absolute;
+      content: '';
+      width: 95%;
+      background-color: #ddd;
+      height: 1px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .copyright-text{
+      font-size: 12px;
+    }
+  }
+}

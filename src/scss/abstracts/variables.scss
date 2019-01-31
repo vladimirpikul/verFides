@@ -33,11 +33,11 @@ $base: (
 
 // Vars for forms
 $forms: (
-  'form-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'form-font-family': unquote("'Open Sans', sans-serif"),
   'form-element-padding': unquote("0.4em 0.7em"),
   'form-element-border-color': #999,
   'form-element-focus-border-color': #000,
-  'placeholder-color': #999
+  'placeholder-color': #fff
 );
 
 // Breakpoints for include media mixin

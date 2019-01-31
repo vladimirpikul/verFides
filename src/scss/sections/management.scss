@@ -1,0 +1,33 @@
+.management{
+  .section-title:after{
+    position: absolute;
+    content: '';
+    width: 250px;
+    background-color: #769eca;
+    height: 1px;
+    bottom: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .management-team{
+    margin-top: 88px;
+    margin-bottom: 35px;
+
+    .name{
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1;
+    }
+
+    .contacts{
+      width: 100px;
+      margin: 7px auto 0;
+      line-height: 0;
+    }
+  }
+
+  .btn-arrow{
+    margin-left: 5px;
+  }
+}

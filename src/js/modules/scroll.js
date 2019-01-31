@@ -3,7 +3,7 @@ const headerScroll = () => {
     e.preventDefault();
     $('html, body').animate({
       scrollTop: ($(window).height()),
-    }, 2000);
+    }, 1500);
   });
 };
 

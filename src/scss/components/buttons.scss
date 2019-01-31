@@ -1,0 +1,21 @@
+.btn{
+  margin: 0 auto;
+  display: block;
+  width: 168px;
+  border: 1px solid #1a3255;
+  padding: 14px 5px;
+  background: transparent;
+  
+  &:hover{
+    background-color: #f0f8ff;
+  }
+
+  &.white{
+    color: #fff;
+    border-color: #fff;
+
+    &:hover{
+      background-color: #294c80;
+    }
+  }
+}

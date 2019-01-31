@@ -5,13 +5,22 @@
     width: 250px;
     background-color: #769eca;
     height: 1px;
-    bottom: -35px;
+    bottom: -26px;
     left: 50%;
     transform: translateX(-50%);
   }
+
+  .section-title-text{
+    line-height: 1.3;
+    color: #787878;
+    margin: 12px auto 0;
+    max-width: 800px;
+  }
+
   .services-swiper{
     margin-top: 100px;
   }
+
   .swiper-slide{
     text-align: center;
 
@@ -21,5 +30,26 @@
       color: #787878;
       margin-top: 15px;
     }
+  }
+
+  .swiper-button-next, .swiper-button-prev{
+    background-size: auto;
+    width: 40px;
+    height: 75px;
+    top: 30%;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .swiper-button-prev{
+    left: 0;
+    background-image: url("../../assets/images/slider-arrow-left.png");
+  }
+
+  .swiper-button-next{
+    right: 0;
+    background-image: url("../../assets/images/slider-arrow-right.png");
   }
 }

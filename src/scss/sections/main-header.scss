@@ -29,12 +29,18 @@
     }
   }
 
-  .header-video{
-    width: 100%;
+  .header-video {
+    min-width: 100%;
+    min-height: 100%;
+
+    @include media('<=tablet') {
+      display: none;
+    }
   }
 
   .mobile-img{
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
 
     @include media('>tablet') {
       display: none;
@@ -105,12 +111,6 @@
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  .header-video{
-    @include media('<=tablet') {
-      display: none;
-    }
   }
 
   .header-video-control{

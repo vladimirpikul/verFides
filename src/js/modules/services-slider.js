@@ -9,7 +9,6 @@ const servicesSlider = () => {
       },
     });
   } else {
-    //console.log(mySwiper);
     $('.services-swiper .swiper-wrapper').removeAttr('style');
     $('.services-swiper .swiper-slide').removeAttr('style');
   }

@@ -1,13 +1,24 @@
 .resources{
-  .section-title:after{
-    position: absolute;
-    content: '';
-    width: 250px;
-    background-color: #769eca;
-    height: 1px;
-    bottom: -37px;
-    left: 50%;
-    transform: translateX(-50%);
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -37px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<=phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<=phone') {
+      font-size: 26px;
+    }
   }
 
   .section-title-text{
@@ -17,19 +28,42 @@
     &:nth-child(n+3){
       margin: 53px auto 37px;
     }
+
+    @include media('<=phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
   }
 
   .section-article{
     text-align: left;
-    column-count: 2;
-    column-width: 475px;
-    column-gap: 20px;
     margin-bottom: 35px;
+
+    @include media('>tablet') {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    @include media('<=phone') {
+      margin-bottom: 30px;
+    }
 
     .article-title{
       color: #1a3255;
       font-size: 18px;
       margin-bottom: 0;
+
+      @include media('<=tablet') {
+        margin-right: -15px;
+
+        &:nth-child(n+3){
+          margin-top: 10px;
+          padding-top: 5px;
+          border-top: 1px solid #d7d7d7;
+        }
+      }
+      @include media('<=phone') {
+        font-size: 16px;
+      }
     }
 
     .article-text{
@@ -42,9 +76,26 @@
   }
 
   .brochures{
+    @include media('<=desktop') {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .item{
       width: 330px;
       padding: 0 15px;
+
+      @include media('<=desktop') {
+        width: 300px;
+
+        & + .item{
+          margin-top: 35px;
+
+          @include media('<=desktop') {
+            margin-top: 25px;
+          }
+        }
+      }
     }
 
     .section-title-text{

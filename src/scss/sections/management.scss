@@ -1,23 +1,76 @@
 .management{
-  .section-title:after{
-    position: absolute;
-    content: '';
-    width: 250px;
-    background-color: #769eca;
-    height: 1px;
-    bottom: -26px;
-    left: 50%;
-    transform: translateX(-50%);
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -26px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<=phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<=phone') {
+      font-size: 26px;
+    }
   }
 
   .management-team{
     margin-top: 88px;
     margin-bottom: 35px;
 
+    @include media('<=desktop') {
+      width: 80%;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media('<=tablet') {
+      width: 90%;
+    }
+    @include media('<=phone') {
+      width: 100%;
+      justify-content: center;
+      margin-top: 55px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .manager{
+    @include media('<=desktop') {
+      width: 40%;
+      margin-bottom: 7%;
+    }
+    @include media('<=tablet') {
+      width: 45%;
+      margin-bottom: 9%;
+
+      &:nth-child(2n){
+        margin-left: 3%;
+      }
+    }
+    @include media('<=phone') {
+      margin-bottom: 11%;
+    }
+
     .name{
       font-size: 18px;
       margin-top: 20px;
       line-height: 1;
+
+      @include media('<=desktop') {
+        margin-top: 15px;
+      }
+      @include media('<=phone') {
+        font-size: 16px;
+        margin-top: 10px;
+      }
     }
 
     .contacts{
@@ -33,6 +86,17 @@
 
     .icon-mail{
       font-size: 26px;
+    }
+  }
+
+  .manager-img-wrap{
+    margin: 0 auto;
+
+    @include media('<=tablet') {
+      width: 160px;
+    }
+    @include media('<=phone') {
+      width: 120px;
     }
   }
 

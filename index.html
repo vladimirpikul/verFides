@@ -17,7 +17,7 @@
   <header class="main-header relative">
     <div class="header-row flex-container space-between align-center">
       <div class="logo-wrap">
-          <a href="#"><img src="assets/images/logo.png" alt="verFides"></a>
+          <a href="#"><img class="logo-img" src="assets/images/logo.png" alt="verFides"></a>
       </div>
       <nav class="header-nav flex-container">
           <ul class="header-nav-list flex-container align-center">
@@ -28,18 +28,22 @@
               <li><a class="header-nav-item" href="">Contact Us</a></li>
               <li><a class="header-nav-item" href="">Client Area</a></li>
           </ul>
+          <a class="mobile-btn column" href="">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
       </nav>
     </div>
     <video class="header-video" src="assets/video/sample1.mp4" autoplay="" loop=""></video>
+    <img class="mobile-img" src="assets/images/mobile-header-img.jpg" alt="">
     <h2 class="h2 main-header-title">Wealth structuring, preservation and protection.</h2>
     <div class="scroll-icon-wrap">
         <a class="scroll-btn" href=""><i class="icon-arrow-down-long"></i></a>
     </div>
     <a class="header-video-control" href="">
         <span class="control-text">Pause</span>
-        <!--<img class="control-img show" src="assets/images/pause-icon.png" alt="">-->
         <i class="control-icon icon-pause show"></i>
-        <!--<img class="control-img" src="assets/images/play-icon.png" alt="">-->
         <i class="control-icon icon-play"></i>
     </a>
   </header>
@@ -64,20 +68,52 @@
       <div class="swiper-container services-swiper">
           <div class="swiper-wrapper">
               <a class="swiper-slide" href="">
-                  <img class="slide-img" src="assets/images/trust_estate-icon.png" alt="Trust & Estate Planning">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/trust_estate-icon.png" alt="Trust & Estate Planning">
+                  </div>
                   <h3 class="h3 section-title-text">Trust & Estate<br>Planning</h3>
               </a>
               <a class="swiper-slide" href="">
-                  <img class="slide-img" src="assets/images/tax_advisory-icon.png" alt="Tax Advisory Services">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/tax_advisory-icon.png" alt="Tax Advisory Services">
+                  </div>
                   <h3 class="h3 section-title-text">Tax Advisory<br>Services</h3>
               </a>
               <a class="swiper-slide" href="">
-                  <img class="slide-img" src="assets/images/employment-icon.png" alt="Employment Solutions: UK Businesses">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/employment-icon.png" alt="Employment Solutions: UK Businesses">
+                  </div>
                   <h3 class="h3 section-title-text">Employment Solutions:<br>UK Businesses</h3>
               </a>
               <a class="swiper-slide" href="">
-                  <img class="slide-img" src="assets/images/real_estate-icon.png" alt="UK Real Estate Structuring">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/real_estate-icon.png" alt="UK Real Estate Structuring">
+                  </div>
                   <h3 class="h3 section-title-text">UK Real Estate<br>Structuring</h3>
+              </a>
+              <a class="swiper-slide" href="">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/businesses-icon.png" alt="Coming to the UK: Businesses & Individuals">
+                  </div>
+                  <h3 class="h3 section-title-text">Coming to the UK:<br>Businesses & Individuals</h3>
+              </a>
+              <a class="swiper-slide" href="">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/structure-icon.png" alt="Wealth Structure & Family Office">
+                  </div>
+                  <h3 class="h3 section-title-text">Wealth Structure &<br>Family Office</h3>
+              </a>
+              <a class="swiper-slide" href="">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/corporate-icon.png" alt="Corporate & Fiduciary Services">
+                  </div>
+                  <h3 class="h3 section-title-text">Corporate & Fiduciary<br>Services</h3>
+              </a>
+              <a class="swiper-slide" href="">
+                  <div class="slide-img-wrap">
+                      <img class="slide-img" src="assets/images/accountancy-icon.png" alt="Accountancy & Tax Compliance">
+                  </div>
+                  <h3 class="h3 section-title-text">Accountancy &<br>Tax Compliance</h3>
               </a>
           </div>
       </div>
@@ -91,13 +127,16 @@
       </div>
   </section>
   <section class="full-image">
-      <img src="assets/images/full-img.jpg" alt="">
+      <img class="desktop-img" src="assets/images/full-img.jpg" alt="">
+      <img class="mobile-img" src="assets/images/moblie-full-img.jpg" alt="">
   </section>
   <section class="management default-section container">
       <h2 class="h2 section-title relative">Management</h2>
       <div class="management-team flex-container space-around">
           <div class="manager flex-container column">
-              <img src="assets/images/avatar1.png" alt="Marco Marano">
+              <div class="manager-img-wrap">
+                  <img src="assets/images/avatar1.png" alt="Marco Marano">
+              </div>
               <span class="name">Marco Marano</span>
               <span class="position">Managing Director</span>
               <div class="contacts flex-container space-between align-center">
@@ -107,7 +146,9 @@
               </div>
           </div>
           <div class="manager flex-container column">
-              <img src="assets/images/avatar2.png" alt="Carlo Borea">
+              <div class="manager-img-wrap">
+                  <img src="assets/images/avatar2.png" alt="Carlo Borea">
+              </div>
               <span class="name">Carlo Borea</span>
               <span class="position">Director</span>
               <div class="contacts flex-container space-between align-center">
@@ -117,7 +158,9 @@
               </div>
           </div>
           <div class="manager flex-container column">
-              <img src="assets/images/avatar3.png" alt="Roberta Vacri">
+              <div class="manager-img-wrap">
+                  <img src="assets/images/avatar3.png" alt="Roberta Vacri">
+              </div>
               <span class="name">Roberta Vacri</span>
               <span class="position">Director</span>
               <div class="contacts flex-container space-between align-center">
@@ -127,7 +170,9 @@
               </div>
           </div>
           <div class="manager flex-container column">
-              <img src="assets/images/avatar4.png" alt="">
+              <div class="manager-img-wrap">
+                  <img src="assets/images/avatar4.png" alt="">
+              </div>
               <span class="name">Terence Pay</span>
               <span class="position">International Tax Advisory</span>
               <div class="contacts flex-container space-between align-center">
@@ -177,7 +222,7 @@
   <section class="registration default-section blue">
       <div class="container">
           <h3 class="h3 section-title-text font-white">Register here for our mailing list and we will keep you up to date with news from Verfides.</h3>
-          <form class="registration-form">
+          <form class="registration-form flex-container space-between wrap">
               <input type="text" placeholder="Name">
               <input type="email" placeholder="Email Address">
               <button class="btn white btn-submit">Submit<i class="btn-arrow icon-arrow-right"></i></button>
@@ -259,7 +304,7 @@
   </section>
   <section class="supervisory default-section container">
       <h2 class="h2 section-title relative">Supervisory & Regulatory Bodies</h2>
-      <div class="section-article flex-container space-between">
+      <div class="section-article flex-container">
           <p>Verfides is registered with and supervised by HM Revenue and Customs as a Trust and Company Service Provider ("TCSP") under The Money Laundering Regulations 2007.</p>
           <p>Verfides (Ireland) Limited and Verfides Trustees Limited are authorised by the Department of Justice and Equality of the Ministry of Justice to carry on Trust and Company Service Provider business in the Republic of Ireland under The Criminal Justice (Money Laundering and Terrorist Financing) Act 2010.</p>
           <p>Verfides Group companies are registered with the IRS of the USA as Foreign Financial Institutions (FFI) and are fully compliant with legislation relating to US FATCA in all the jurisdictions where there is a local regulatory requirement.</p>
@@ -267,13 +312,13 @@
       <i class="icon-balance"></i>
   </section>
   <footer class="footer-main">
-      <div class="currency-select">
-          <span class="currency">Currency:</span>
-          <a class="item active" href="">GBP&pound;</a>
-          <a class="item" href="">EUR&euro;</a>
-          <a class="item" href="">USD$</a>
-      </div>
       <div class="currency-row">
+          <div class="currency-select">
+              <span class="currency">Currency:</span>
+              <a class="item active" href="">GBP&pound;</a>
+              <a class="item" href="">EUR&euro;</a>
+              <a class="item" href="">USD$</a>
+          </div>
           <img src="assets/images/currency-row.jpg" alt="">
       </div>
       <nav class="footer-nav relative">
@@ -306,6 +351,7 @@
               <a href="#"><img src="assets/images/logo_footer.png" alt="verFides"></a>
           </div>
           <span class="copyright-text">© Copyright 2015</span>
+          <span class="regulated">Regulated by: MoJ (Ireland) Number: 761 5235 | FATCA</span>
       </div>
   </footer>
   <script src="assets/js/vendor.min.js" defer></script>

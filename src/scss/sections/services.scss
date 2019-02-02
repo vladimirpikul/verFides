@@ -1,13 +1,31 @@
 .services{
-  .section-title:after{
-    position: absolute;
-    content: '';
-    width: 250px;
-    background-color: #769eca;
-    height: 1px;
-    bottom: -26px;
-    left: 50%;
-    transform: translateX(-50%);
+  &.container{
+    @include media('<=phone') {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<=phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<=phone') {
+      font-size: 26px;
+    }
   }
 
   .section-title-text{
@@ -15,20 +33,65 @@
     color: #787878;
     margin: 12px auto 0;
     max-width: 800px;
+
+    @include media('<=phone') {
+      margin: auto 20px;
+      text-align: left;
+      font-size: 16px;
+    }
   }
 
   .services-swiper{
     margin-top: 100px;
+
+    @include media('<=phone') {
+      margin-top: 50px;
+    }
+  }
+
+  .swiper-wrapper{
+    @include media('<=desktop') {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include media('<=tablet') {
+      justify-content: center;
+    }
+    @include media('<=phone') {
+      margin-left: 25px;
+    }
   }
 
   .swiper-slide{
     text-align: center;
 
-    .slide-text{
-      display: block;
-      font-size: 18px;
-      color: #787878;
-      margin-top: 15px;
+    @include media('<=desktop') {
+      width: 23%;
+      margin-bottom: 5%;
+    }
+    @include media('<=tablet', '>phone') {
+      width: 36%;
+      margin-bottom: 7%;
+
+      &:nth-child(2n){
+        margin-left: 3%;
+      }
+    }
+    @include media('<=phone') {
+      display: flex;
+      width: 100%;
+      margin-bottom: 3%;
+
+      & + .swiper-slide{
+        border-top: 1px solid #d7d7d7;
+        padding-top: 4%;
+      }
+    }
+  }
+
+  .slide-img-wrap{
+    @include media('<=phone') {
+      width: 80px;
     }
   }
 
@@ -37,6 +100,10 @@
 
     top: 58%;
     background: none;
+
+    @include media('<=desktop') {
+      display: none;
+    }
 
     .angle{
       width: 100%;
@@ -65,6 +132,14 @@
         color: #000;
       }
     }
+  }
+
+  .swiper-button-next{
+    right: 15px;
+  }
+
+  .swiper-button-prev{
+    left: 15px;
   }
 
   .arrow-left{

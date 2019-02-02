@@ -1,17 +1,101 @@
 .header-nav{
+  @include media('<=tablet') {
+    @include size(37%, 100%);
+
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-btn{
+    display: none;
+    padding: 10px;
+
+    @include media('<=desktop') {
+      display: flex;
+    }
+
+    span{
+      background-color: #fff;
+      width: 25px;
+      height: 3px;
+      border-radius: 2px;
+
+      & + span{
+        margin-top: 4px;
+      }
+
+      @include media('<=tablet') {
+        background-color: #444;
+      }
+    }
+
+    &.opened{
+      span{
+        &:nth-child(1){
+          display: none;
+        }
+
+        &:nth-child(2){
+          transform: rotate(45deg) translate(3px, 2px);
+        }
+
+        &:nth-child(3){
+          transform: rotate(-45deg) translate(3px, -2px);
+        }
+      }
+    }
+  }
+
   &-list{
     @extend %listreset;
 
-    li{
-      & + li{
+    @include media('<=desktop') {
+      display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 80px;
+      flex-direction: column;
+      background-color: white;
+    }
+    @include media('<=tablet') {
+      top: 60px;
+    }
+
+    &.show{
+      display: flex;
+    }
+  }
+
+  li{
+    @include media('<=desktop') {
+      padding-left: 3%;
+    }
+
+    & + li{
+      @include media('>desktop') {
+        margin-left: 25px;
+      }
+      @include media('>widescreen') {
         margin-left: 43px;
       }
+      @include media('<=desktop') {
+        border-top: 1px solid #a5a5a5;
+      }
+    }
 
-      &:hover{
-        .header-nav-item{
+    &:hover{
+      .header-nav-item{
+        @include media('>desktop') {
           border-bottom-color: #fff;
         }
       }
+    }
+
+    @include media('<=desktop') {
+      width: 100%;
     }
   }
 
@@ -22,5 +106,12 @@
     color: #fff;
     font-size: 18px;
     border: 1px solid transparent;
+
+    @include media('<=widescreen') {
+      font-size: 16px;
+    }
+    @include media('<=desktop') {
+      color: #1a3255;
+    }
   }
 }

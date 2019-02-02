@@ -1,7 +1,18 @@
 .footer-main{
   text-align: center;
-  
+
+  .currency-row{
+    @include media('<=tablet') {
+      display: none;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+
   .currency-select{
+    margin-bottom: 5px;
     color: #929292;
     font-weight: bold;
 
@@ -15,15 +26,11 @@
     }
   }
 
-  .currency-row{
-    margin-top: 5px;
-
-    img{
-      width: 100%;
-    }
-  }
-
   .footer-nav{
+    @include media('<=tablet') {
+      margin-bottom: 10px;
+    }
+
     &:after{
       position: absolute;
       content: '';
@@ -33,6 +40,10 @@
       bottom: -15px;
       left: 50%;
       transform: translateX(-50%);
+
+      @include media('<=tablet') {
+        display: none;
+      }
     }
 
     &-list {
@@ -41,6 +52,13 @@
       max-width: 600px;
       flex-wrap: wrap;
       margin: 45px auto 0;
+
+      @include media('<=tablet') {
+        margin-top: 0;
+      }
+      @include media('<=phone') {
+        justify-content: flex-start;
+      }
     }
 
     &-item{
@@ -51,9 +69,22 @@
     li{
       color: #787878;
 
+      @include media('<=phone') {
+        width: 50%;
+        text-align: left;
+        padding-left: 40px;
+      }
+
       & + li{
         margin-left: 25px;
         margin-bottom: 5px;
+
+        @include media('<=tablet') {
+          margin-left: 20px;
+        }
+        @include media('<=phone') {
+          margin-left: 0;
+        }
       }
       
       &:hover{
@@ -68,6 +99,10 @@
   }
 
   .services-nav{
+    @include media('<=tablet') {
+      display: none;
+    }
+
     &-list {
       @extend %listreset;
 
@@ -96,6 +131,7 @@
   }
 
   .copyright{
+    display: block;
     padding-top: 15px;
 
     &:before{
@@ -111,6 +147,17 @@
 
     .copyright-text{
       font-size: 12px;
+    }
+
+    .regulated{
+      display: none;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12px;
+
+      @include media('<=tablet') {
+        display: block;
+      }
     }
   }
 }

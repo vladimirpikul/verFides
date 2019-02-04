@@ -10,13 +10,13 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=phone') {
+      @include media('<phone') {
         bottom: -18px;
         width: 200px;
       }
     }
 
-    @include media('<=phone') {
+    @include media('<phone') {
       font-size: 26px;
     }
   }
@@ -25,22 +25,22 @@
     text-align: left;
     margin-top: 70px;
 
-    @include media('<=tablet') {
+    @include media('<tablet') {
       flex-direction: column;
     }
-    @include media('<=phone') {
+    @include media('<phone') {
       margin-top: 40px;
     }
 
     p{
       width: 33.33%;
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         width: 100%;
       }
 
       & + p{
-        @include media('>tablet') {
+        @include media('>=tablet') {
           margin-left: 20px;
         }
       }

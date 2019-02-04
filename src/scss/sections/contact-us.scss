@@ -10,13 +10,13 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=phone') {
+      @include media('<phone') {
         bottom: -18px;
         width: 200px;
       }
     }
 
-    @include media('<=phone') {
+    @include media('<phone') {
       font-size: 26px;
     }
   }
@@ -25,21 +25,21 @@
     margin: 71px auto 59px;
     max-width: 800px;
 
-    @include media('<=phone') {
+    @include media('<phone') {
       margin: 12% auto 8%;
       font-size: 16px;
     }
   }
 
   .contact-info{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       flex-direction: column;
     }
 
     .section-title-text{
       margin: 20px auto 0;
 
-      @include media('<=desktop') {
+      @include media('<desktop') {
         margin-top: 10px;
       }
     }
@@ -49,7 +49,7 @@
       font: 18px/1 'Merriweather', serif;
       margin-bottom: 15px;
 
-      @include media('<=desktop') {
+      @include media('<desktop') {
         margin-bottom: 5px;
       }
     }
@@ -63,7 +63,7 @@
     .contacts{
       margin-top: 25px;
 
-      @include media('<=desktop') {
+      @include media('<desktop') {
         margin-top: 15px;
       }
 
@@ -79,7 +79,7 @@
   }
 
   .item{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       & + .item{
         margin-top: 30px;
       }

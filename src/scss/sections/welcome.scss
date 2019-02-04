@@ -12,13 +12,13 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=phone') {
+      @include media('<phone') {
         bottom: -18px;
         width: 200px;
       }
     }
 
-    @include media('<=phone') {
+    @include media('<phone') {
       font-size: 26px;
     }
   }
@@ -27,7 +27,7 @@
     margin: 62px auto 30px;
     max-width: 660px;
 
-    @include media('<=phone') {
+    @include media('<phone') {
       margin: 12% auto 8%;
       font-size: 16px;
     }
@@ -36,11 +36,11 @@
   .section-article{
     text-align: left;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
       column-count: 2;
       column-gap: 20px;
     }
-    @include media('<=phone') {
+    @include media('<phone') {
       margin-bottom: 0;
     }
 

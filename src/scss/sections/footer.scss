@@ -2,7 +2,7 @@
   text-align: center;
 
   .currency-row{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       display: none;
     }
 
@@ -11,23 +11,8 @@
     }
   }
 
-  .currency-select{
-    margin-bottom: 5px;
-    color: #929292;
-    font-weight: bold;
-
-    .item{
-      margin-left: 15px;
-      color: inherit;
-    }
-
-    .active{
-      color: #769eca;
-    }
-  }
-
   .footer-nav{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       margin-bottom: 10px;
     }
 
@@ -41,7 +26,7 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         display: none;
       }
     }
@@ -53,10 +38,10 @@
       flex-wrap: wrap;
       margin: 45px auto 0;
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         margin-top: 0;
       }
-      @include media('<=phone') {
+      @include media('<phone') {
         justify-content: flex-start;
         border-top: 2px solid #173356;
         padding-top: 30px;
@@ -71,7 +56,7 @@
     li{
       color: #787878;
 
-      @include media('<=phone') {
+      @include media('<phone') {
         width: 50%;
         text-align: left;
         padding-left: 40px;
@@ -81,10 +66,10 @@
         margin-left: 25px;
         margin-bottom: 5px;
 
-        @include media('<=tablet') {
+        @include media('<tablet') {
           margin-left: 20px;
         }
-        @include media('<=phone') {
+        @include media('<phone') {
           margin-left: 0;
         }
       }
@@ -101,7 +86,7 @@
   }
 
   .services-nav{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       display: none;
     }
 
@@ -157,7 +142,7 @@
       margin-bottom: 10px;
       font-size: 12px;
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         display: block;
       }
     }

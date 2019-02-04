@@ -10,13 +10,13 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=phone') {
+      @include media('<phone') {
         bottom: -18px;
         width: 200px;
       }
     }
 
-    @include media('<=phone') {
+    @include media('<phone') {
       font-size: 26px;
     }
   }
@@ -29,7 +29,7 @@
       margin: 53px auto 37px;
     }
 
-    @include media('<=phone') {
+    @include media('<phone') {
       margin: 12% auto 8%;
       font-size: 16px;
     }
@@ -39,11 +39,11 @@
     text-align: left;
     margin-bottom: 35px;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
       column-count: 2;
       column-gap: 20px;
     }
-    @include media('<=phone') {
+    @include media('<phone') {
       margin-bottom: 30px;
     }
 
@@ -52,7 +52,7 @@
       font-size: 18px;
       margin-bottom: 0;
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         margin-right: -15px;
 
         &:nth-child(n+3){
@@ -61,7 +61,7 @@
           border-top: 1px solid #d7d7d7;
         }
       }
-      @include media('<=phone') {
+      @include media('<phone') {
         font-size: 16px;
       }
     }
@@ -76,7 +76,7 @@
   }
 
   .brochures{
-    @include media('<=desktop') {
+    @include media('<desktop') {
       flex-direction: column;
       align-items: center;
     }
@@ -85,15 +85,11 @@
       width: 330px;
       padding: 0 15px;
 
-      @include media('<=desktop') {
+      @include media('<desktop') {
         width: 300px;
 
         & + .item{
-          margin-top: 35px;
-
-          @include media('<=desktop') {
-            margin-top: 25px;
-          }
+          margin-top: 30px;
         }
       }
     }

@@ -1,5 +1,5 @@
 .header-nav{
-  @include media('<=tablet') {
+  @include media('<tablet') {
     @include size(37%, 100%);
 
     background-color: #fff;
@@ -12,7 +12,7 @@
     display: none;
     padding: 10px;
 
-    @include media('<=desktop') {
+    @include media('<desktop') {
       display: flex;
     }
 
@@ -26,7 +26,7 @@
         margin-top: 4px;
       }
 
-      @include media('<=tablet') {
+      @include media('<tablet') {
         background-color: #444;
       }
     }
@@ -51,7 +51,7 @@
   &-list{
     @extend %listreset;
 
-    @include media('<=desktop') {
+    @include media('<desktop') {
       display: none;
       position: absolute;
       left: 0;
@@ -60,7 +60,7 @@
       flex-direction: column;
       background-color: white;
     }
-    @include media('<=tablet') {
+    @include media('<tablet') {
       top: 60px;
     }
 
@@ -70,31 +70,31 @@
   }
 
   li{
-    @include media('<=desktop') {
+    @include media('<desktop') {
       padding-left: 3%;
     }
 
     & + li{
-      @include media('>desktop') {
+      @include media('>=desktop') {
         margin-left: 25px;
       }
-      @include media('>widescreen') {
+      @include media('>=widescreen') {
         margin-left: 43px;
       }
-      @include media('<=desktop') {
+      @include media('<desktop') {
         border-top: 1px solid #a5a5a5;
       }
     }
 
     &:hover{
       .header-nav-item{
-        @include media('>desktop') {
+        @include media('>=desktop') {
           border-bottom-color: #fff;
         }
       }
     }
 
-    @include media('<=desktop') {
+    @include media('<desktop') {
       width: 100%;
     }
   }
@@ -107,10 +107,10 @@
     font-size: 18px;
     border: 1px solid transparent;
 
-    @include media('<=widescreen') {
+    @include media('<widescreen') {
       font-size: 16px;
     }
-    @include media('<=desktop') {
+    @include media('<desktop') {
       color: #1a3255;
     }
   }

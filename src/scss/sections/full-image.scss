@@ -4,13 +4,13 @@
   }
 
   .desktop-img{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       display: none;
     }
   }
 
   .mobile-img{
-    @include media('>tablet') {
+    @include media('>=tablet') {
       display: none;
     }
   }

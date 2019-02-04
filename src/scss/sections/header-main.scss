@@ -1,4 +1,7 @@
-.main-header{
+.header-main{
+  height: 100vh;
+  overflow: hidden;
+
   .header-row{
     position: absolute;
     width: 100%;
@@ -6,14 +9,14 @@
     z-index: 1;
     padding: 27px 50px 0 30px;
 
-    @include media('<=tablet') {
+    @include media('<tablet') {
       height: 60px;
       padding: 0;
     }
   }
 
   .logo-wrap{
-    @include media('<=tablet') {
+    @include media('<tablet') {
       @include size(63%, 100%);
 
       background-color: #043355;
@@ -21,11 +24,11 @@
       justify-content: center;
       align-items: center;
     }
+  }
 
-    .logo-img{
-      @include media('<=tablet') {
-        width: 130px;
-      }
+  .logo-img{
+    @include media('<tablet') {
+      width: 130px;
     }
   }
 
@@ -33,16 +36,17 @@
     min-width: 100%;
     min-height: 100%;
 
-    @include media('<=tablet') {
+    @include media('<tablet') {
       display: none;
     }
   }
 
   .mobile-img{
+    max-width: unset;
     min-height: 100%;
     min-width: 100%;
 
-    @include media('>tablet') {
+    @include media('>=tablet') {
       display: none;
     }
   }
@@ -57,10 +61,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include media('<=phone') {
-      font-size: 26px;
-    }
-
     &:after{
       position: absolute;
       content: '';
@@ -71,10 +71,14 @@
       left: 50%;
       transform: translateX(-50%);
 
-      @include media('<=phone') {
+      @include media('<phone') {
         bottom: -18px;
         width: 200px;
       }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
     }
   }
 
@@ -86,7 +90,11 @@
     text-align: center;
     transition: all 0.2s linear;
 
-    @include media('<=desktop') {
+    &:hover{
+      padding-top: 5px;
+    }
+
+    @include media('<desktop') {
       @include size(40px);
     }
 
@@ -95,14 +103,10 @@
       font-size: 28px;
       line-height: 50px;
 
-      @include media('<=desktop') {
+      @include media('<desktop') {
         font-size: 20px;
         line-height: 40px;
       }
-    }
-
-    &:hover{
-      padding-top: 5px;
     }
   }
 
@@ -120,7 +124,7 @@
     color: #fff;
     font-size: 18px;
 
-    @include media('<=tablet') {
+    @include media('<tablet') {
       display: none;
     }
 

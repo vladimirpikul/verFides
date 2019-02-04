@@ -5,9 +5,9 @@
 // For headers
 $headings: (
   'sizes': (
-    'h1-font-size': 36px,
-    'h2-font-size': 18px,
-    'h3-font-size': 24px,
+    'h1-font-size': 48px,
+    'h2-font-size': 36px,
+    'h3-font-size': 18px,
     'h4-font-size': 21px,
     'h5-font-size': 17px,
     'h6-font-size': 15px
@@ -33,11 +33,11 @@ $base: (
 
 // Vars for forms
 $forms: (
-  'form-font-family': unquote("Arial, 'Helvetica Neue', Helvetica, sans-serif"),
+  'form-font-family': unquote("'Open Sans', sans-serif"),
   'form-element-padding': unquote("0.4em 0.7em"),
   'form-element-border-color': #999,
   'form-element-focus-border-color': #000,
-  'placeholder-color': #999
+  'placeholder-color': #fff
 );
 
 // Breakpoints for include media mixin

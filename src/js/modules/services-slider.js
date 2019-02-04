@@ -1,6 +1,6 @@
 const servicesSlider = () => {
   if ($(window).width() > 980) {
-    const mySwiper = new Swiper('.services-swiper', {
+    const mySwiper = new Swiper('.services-swiper .swiper-container', {
       loop: true,
       slidesPerView: 4,
       navigation: {
@@ -8,11 +8,7 @@ const servicesSlider = () => {
         prevEl: '.swiper-button-prev',
       },
     });
-  } else {
-    $('.services-swiper .swiper-wrapper').removeAttr('style');
-    $('.services-swiper .swiper-slide').removeAttr('style');
   }
 };
-
 
 export default servicesSlider;

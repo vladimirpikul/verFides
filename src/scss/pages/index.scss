@@ -1,0 +1,573 @@
+// welcome section
+.welcome{
+  border-bottom: 1px solid #a5a5a5;
+
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    margin: 62px auto 30px;
+    max-width: 660px;
+
+    @include media('<phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
+  }
+
+  .section-article{
+    text-align: left;
+
+    @include media('>=tablet') {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    @include media('<phone') {
+      margin-bottom: 0;
+    }
+
+    p{
+      display: grid;
+      margin: 0 0 0.8em;
+    }
+  }
+}
+
+// services section
+.services{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    line-height: 1.3;
+    color: #787878;
+    margin: 12px auto 0;
+    max-width: 800px;
+
+    @include media('<phone') {
+      margin: auto 20px;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+}
+
+// full-img section
+.full-image{
+  img{
+    width: 100%;
+  }
+
+  .desktop-img{
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+
+  .mobile-img{
+    @include media('>=tablet') {
+      display: none;
+    }
+  }
+}
+
+// management section
+.management{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -26px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .management-team{
+    margin-top: 88px;
+    margin-bottom: 35px;
+
+    @include media('<desktop') {
+      width: 80%;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include media('<tablet') {
+      width: 90%;
+    }
+    @include media('<phone') {
+      width: 100%;
+      justify-content: center;
+      margin-top: 55px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .manager{
+    @include media('<desktop') {
+      width: 40%;
+      margin-bottom: 7%;
+    }
+    @include media('<tablet') {
+      width: 45%;
+      margin-bottom: 9%;
+
+      &:nth-child(2n){
+        margin-left: 3%;
+      }
+    }
+    @include media('<phone') {
+      margin-bottom: 11%;
+    }
+
+    .name{
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1;
+
+      @include media('<desktop') {
+        margin-top: 15px;
+      }
+      @include media('<phone') {
+        font-size: 16px;
+        margin-top: 10px;
+      }
+    }
+
+    .contacts{
+      width: 100px;
+      margin: 7px auto 0;
+      line-height: 0;
+    }
+
+    .icon-linkedin{
+      font-size: 20px;
+      color: #1d8cb5;
+    }
+
+    .icon-mail{
+      font-size: 26px;
+    }
+  }
+
+  .manager-img-wrap{
+    margin: 0 auto;
+
+    @include media('<tablet') {
+      width: 160px;
+    }
+    @include media('<phone') {
+      width: 120px;
+    }
+  }
+
+  .btn-arrow{
+    margin-left: 5px;
+  }
+}
+
+// tax section
+.tax{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    margin: 62px auto 30px;
+    max-width: 660px;
+
+    @include media('<phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
+  }
+
+  .btn-arrow{
+    margin-left: 5px;
+  }
+
+  .underlay-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1a3255;
+    z-index: -2;
+  }
+
+  .overlay-bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+}
+
+// resources section
+.resources{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -37px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    margin: 70px auto 50px;
+    max-width: 800px;
+
+    &:nth-child(n+3){
+      margin: 53px auto 37px;
+    }
+
+    @include media('<phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
+  }
+
+  .section-article{
+    text-align: left;
+    margin-bottom: 35px;
+
+    @include media('>=tablet') {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    @include media('<phone') {
+      margin-bottom: 30px;
+    }
+
+    .article-title{
+      color: #1a3255;
+      font-size: 18px;
+      margin-bottom: 0;
+
+      @include media('<tablet') {
+        margin-right: -15px;
+
+        &:nth-child(n+3){
+          margin-top: 10px;
+          padding-top: 5px;
+          border-top: 1px solid #d7d7d7;
+        }
+      }
+      @include media('<phone') {
+        font-size: 16px;
+      }
+    }
+
+    .article-text{
+      margin-bottom: 5px;
+    }
+  }
+
+  .btn-arrow{
+    margin-left: 5px;
+  }
+
+  .brochures{
+    @include media('<desktop') {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item{
+      width: 330px;
+      padding: 0 15px;
+
+      @include media('<desktop') {
+        width: 300px;
+
+        & + .item{
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .section-title-text{
+      margin: 7px 0 4px;
+    }
+  }
+
+  .link{
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+// registration section
+.registration{
+  .section-title-text{
+    margin: 0 auto 40px;
+    max-width: 800px;
+
+    @include media('<phone') {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+// contact-us section
+.contact-us{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    margin: 71px auto 59px;
+    max-width: 800px;
+
+    @include media('<phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
+  }
+
+  .contact-info{
+    @include media('<tablet') {
+      flex-direction: column;
+    }
+
+    .section-title-text{
+      margin: 20px auto 0;
+
+      @include media('<desktop') {
+        margin-top: 10px;
+      }
+    }
+
+    .underline{
+      color: #1a3255;
+      font: 18px/1 'Merriweather', serif;
+      margin-bottom: 15px;
+
+      @include media('<desktop') {
+        margin-bottom: 5px;
+      }
+    }
+
+    .coordinates{
+      & > span{
+        display: block;
+      }
+    }
+
+    .contacts{
+      margin-top: 25px;
+
+      @include media('<desktop') {
+        margin-top: 15px;
+      }
+
+      & > span{
+        display: block;
+      }
+
+      a{
+        font-weight: 400;
+        color: #002e5f;
+      }
+    }
+  }
+
+  .item{
+    @include media('<tablet') {
+      & + .item{
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+// questions section
+.questions{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-title-text{
+    margin: 71px auto 59px;
+    max-width: 800px;
+
+    @include media('<phone') {
+      margin: 12% auto 8%;
+      font-size: 16px;
+    }
+  }
+}
+
+// supervisory section
+.supervisory{
+  .section-title{
+    &:after{
+      position: absolute;
+      content: '';
+      width: 250px;
+      background-color: #769eca;
+      height: 1px;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include media('<phone') {
+        bottom: -18px;
+        width: 200px;
+      }
+    }
+
+    @include media('<phone') {
+      font-size: 26px;
+    }
+  }
+
+  .section-article{
+    text-align: left;
+    margin-top: 70px;
+
+    @include media('<tablet') {
+      flex-direction: column;
+    }
+    @include media('<phone') {
+      margin-top: 40px;
+    }
+
+    p{
+      width: 33.33%;
+
+      @include media('<tablet') {
+        width: 100%;
+      }
+
+      & + p{
+        @include media('>=tablet') {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

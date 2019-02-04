@@ -16,6 +16,11 @@
   &.blue{
     background-color: #1a3255;
   }
+
+  @include media('<phone') {
+    padding-top: 13%;
+    padding-bottom: 13%;
+  }
 }
 
 // font styles

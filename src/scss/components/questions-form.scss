@@ -1,9 +1,12 @@
 .questions-form{
   text-align: left;
-  max-width: 740px;
+  max-width: 730px;
   margin: 0 auto;
 
   .form-wrap{
+    display: flex;
+    justify-content: space-between;
+
     @include media('<tablet') {
       flex-direction: column;
       align-items: center;
@@ -11,6 +14,8 @@
   }
 
   .contacts-input{
+    display: flex;
+    flex-direction: column;
     width: 100%;
   }
 
@@ -28,7 +33,7 @@
     }
   }
 
-  input {
+  .input-field{
     width: 100%;
     max-width: 350px;
     height: 50px;
@@ -40,7 +45,7 @@
       margin: 0 auto;
     }
 
-    & + input {
+    & + .input-field{
       margin-top: 20px;
     }
   }

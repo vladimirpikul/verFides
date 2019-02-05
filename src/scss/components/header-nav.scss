@@ -1,4 +1,6 @@
 .header-nav{
+  display: flex;
+
   @include media('<tablet') {
     @include size(37%, 100%);
 
@@ -10,7 +12,9 @@
 
   .mobile-btn{
     display: none;
+    cursor: pointer;
     padding: 10px;
+    flex-direction: column;
 
     @include media('<desktop') {
       display: flex;
@@ -51,6 +55,9 @@
   &-list{
     @extend %listreset;
 
+    display: flex;
+    align-items: center;
+
     @include media('<desktop') {
       display: none;
       position: absolute;
@@ -74,6 +81,18 @@
       padding-left: 3%;
     }
 
+    &:hover, &.active{
+      .header-nav-item{
+        @include media('>=desktop') {
+          border-bottom-color: #fff;
+        }
+      }
+    }
+
+    @include media('<desktop') {
+      width: 100%;
+    }
+
     & + li{
       @include media('>=desktop') {
         margin-left: 25px;
@@ -85,22 +104,11 @@
         border-top: 1px solid #a5a5a5;
       }
     }
-
-    &:hover{
-      .header-nav-item{
-        @include media('>=desktop') {
-          border-bottom-color: #fff;
-        }
-      }
-    }
-
-    @include media('<desktop') {
-      width: 100%;
-    }
   }
 
   &-item{
     display: block;
+    font-weight: 400;
     height: 46px;
     line-height: 46px;
     color: #fff;

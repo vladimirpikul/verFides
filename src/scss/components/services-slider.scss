@@ -1,8 +1,11 @@
 .services-swiper{
-  max-width: 1000px;
   margin: 100px auto 0;
   position: relative;
 
+  @include media('>=desktop') {
+    width: 80%;
+    max-width: 900px;
+  }
   @include media('<phone') {
     margin-top: 50px;
   }
@@ -16,7 +19,7 @@
       justify-content: center;
     }
     @include media('<phone') {
-      margin-left: 25px;
+      margin-left: 40px;
     }
   }
 
@@ -93,11 +96,11 @@
   }
 
   .swiper-button-next{
-    right: 15px;
+    right: -7%;
   }
 
   .swiper-button-prev{
-    left: 15px;
+    left: -7%;
   }
 
   .arrow-left{

@@ -12,6 +12,8 @@
   }
 
   .footer-nav{
+    position: relative;
+
     @include media('<tablet') {
       margin-bottom: 10px;
     }
@@ -37,6 +39,8 @@
       max-width: 600px;
       flex-wrap: wrap;
       margin: 45px auto 0;
+      display: flex;
+      justify-content: center;
 
       @include media('<tablet') {
         margin-top: 0;
@@ -51,6 +55,10 @@
     &-item{
       font-size: 16px;
       color: inherit;
+
+      &:hover{
+        color: #000;
+      }
     }
 
     li{
@@ -73,10 +81,6 @@
           margin-left: 0;
         }
       }
-      
-      &:hover{
-        color: #000;
-      }
     }
 
     .icon-linkedin{
@@ -96,6 +100,8 @@
       max-width: 980px;
       flex-wrap: wrap;
       margin: 35px auto 35px;
+      display: flex;
+      justify-content: center;
     }
 
     li{
@@ -118,6 +124,7 @@
   }
 
   .copyright{
+    position: relative;
     display: block;
     padding-top: 15px;
 

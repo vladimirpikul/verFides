@@ -1,8 +1,8 @@
 const videoControls = () => {
   const videoEl = $('.header-video')[0];
-  const controlIcon = $('.header-video-control .control-icon');
-  const controlText = $('.header-video-control .control-text');
   const controlBtn = $('.header-video-control');
+  const controlIcon = controlBtn.find('.control-icon');
+  const controlText = controlBtn.find('.control-text');
 
   controlBtn.click((e) => {
     e.preventDefault();

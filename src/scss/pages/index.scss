@@ -343,10 +343,6 @@
     }
 
     .item{
-      @include media('<tablet') {
-        margin-right: -15px;
-      }
-
       & + .item {
         margin-left: 20px;
 
